@@ -1,0 +1,47 @@
+#time-counter-overlay {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 999999;
+  background: rgba(0,0,0,1);
+  color: #fff;
+  font-size: 13px;
+  font-family: monospace;
+  padding: 4px 8px;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+/* Warning below the counter */
+#time-warning-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;       /* half viewport width */
+  height: 100vh;      /* half viewport height */
+  z-index: 999998;
+  background: rgba(255,0,0,0.95);
+  color: #fff;
+  font-size: 36px;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  pointer-events: auto;
+}
+
+#time-reset-btn {
+  position: fixed;
+  top: 5px;
+  right: 8px;
+  z-index: 1000001;
+  color: #fff;
+  font-size: 14px;
+  font-family: monospace;
+  cursor: pointer;
+  user-select: none;
+}
